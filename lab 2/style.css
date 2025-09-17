@@ -1,0 +1,99 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #333;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url("https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg?_gl=1*jyf97n*_ga*MTA3MDI1Mjg0OC4xNzQzMzIwMTk3*_ga_8JE65Q40S6*czE3NTc5OTk4NjQkbzMxJGcxJHQxNzU4MDAxMDgwJGo0MyRsMCRoMA..");
+      background-position: center;
+      object-fit: cover;
+      color: #fff;
+      padding: 60px 60px;
+      text-align: center;
+      overflow: hidden;
+    }
+    header .text{
+        min-width: 50%;
+        text-align: left;
+    }
+    header .photo img{
+        width: 600px;
+        vertical-align: bottom;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+
+    }
+    header p {
+      font-size: 1.6rem;
+    }
+    header a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: #ff9800;
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    #about p, #about ul{
+        font-size: 1.2rem;
+    }
+    section {
+      padding: 40px 20px;
+      margin: 0 150px;
+      color: #fff;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      padding: 15px;
+      background-image: linear-gradient(#98194e, #4a0e26);
+      color: #fff;
+      transition: scale 0.5s ease;
+      cursor: pointer;
+    }
+    .project-card:hover{
+        scale: 1.05;
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    #contact p{
+      font-size: 1.2rem;
+    }
+    #contact p a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #contact p a:hover{
+        text-decoration: underline;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }

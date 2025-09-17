@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form lab 1</title>
+</head>
+<body>
+    <fieldset>
+        <legend>User personal Information</legend>
+        <form action="#">
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password"><br>
+
+            <label for="phone-num">Phone number</label><br>
+            <input type="tel" id="phone-num" placeholder="1234-5678910" pattern="[0-9]{4}-[0-9]{7}"><br>
+            
+            <div class="gender-radio">
+                <label>Select gender:</label>
+                <input type="radio" id="male" value="Male" name="gender"> &nbsp;
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender"> &nbsp;
+                <label for="female">Female</label>
+                <input type="radio" id="others" value="Others" name="gender"> &nbsp;
+                <label for="others">Others</label>
+            </div>
+            <br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" min="18" max="30">
+
+            <br>
+
+            <div class="year-selection">
+                <b><i>Select Year</i></b><br>
+                <select id="year">
+                    <option value="First year">First year</option>
+                    <option value="Second year">Second year</option>
+                    <option value="Third year" selected>Third year</option>
+                    <option value="Fourth year">Fourth year</option>
+                </select>
+                <br>
+            </div>
+            
+            <div class="elective-selection">
+                <b><i>Select Elective Subjects</i></b><br>
+                <input type="checkbox" id="ai" value="Artificial Intelligence">
+                <label for="ai">Artificial Intelligence</label><br>
+                <input type="checkbox" id="data-mining" value="Data Mining">
+                <label for="data-mining"></label>Data Mining<br>
+                <input type="checkbox" id="computer-vision" value="Computer Vision">
+                <label for="computer-vision">Computer Vision</label><br>
+            </div>
+            
+
+            <table>
+                <caption>Education</caption>
+                <tr>
+                <th>Degree</th>
+                <th>Year</th>
+                <th>Marks / Grade</th>
+                </tr>
+                <tr>
+                <td>Matric</td>
+                <td>2007</td>
+                <td>A</td>
+                </tr>
+                <tr>
+                <td>FSc</td>
+                <td>2009</td>
+                <td>A</td>
+                </tr>
+                <tr>
+                <td>BSc</td>
+                <td>2013</td>
+                <td>3.00 CGPA</td>
+                </tr>
+            </table>
+
+            <button>Submit</button>
+            <button>Rest</button>
+        </form>
+    </fieldset>
+
+</body>
+</html>
