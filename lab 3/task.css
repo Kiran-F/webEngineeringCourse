@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.form-container {
+  background-image: url("UET_Taxila_logo..png"); /* your logo */
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+form{
+    width: 450px;
+}
+.form-group {
+  display: flex;
+  margin-bottom: 3px;
+  gap: 3px;
+}
+.label {
+  background-color: #00f; /* blue */
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.form-group input:not([type="file"]),
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+textarea {
+  height: 60px;
+  resize: none;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 5px;
+}
+.btn {
+  background-color: #00f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid black;
+
+}
+.btn:hover {
+  background-color: darkblue;
+}
