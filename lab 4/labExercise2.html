@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index Hover Example</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .box1 {
+      background: lightcoral;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+
+    .box2 {
+      background: lightseagreen;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    .box3 {
+      background: lightblue;
+      top: 150px;
+      left: 150px;
+      z-index: 3;
+    }
+
+    /* 👇 When you hover, increase z-index to bring it forward */
+    .box:hover {
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+</body>
+</html>

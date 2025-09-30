@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<style>
+    body{
+        background-color: #000;
+    }
+    h1{
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Impact, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-weight: 200;
+        font-size: 2.6rem;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .img-flex{
+        width: 22%;
+        height: 65vh;
+        transition: transform 0.3s ease;
+    }
+    .img-flex:hover{
+        transform: scale(1.08);
+    }
+    .img-flex img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <h1>Places to visit</h1>
+
+    <div class="container">
+
+        <div class="img-flex">
+            <img src="images/countryside england.jpg" alt="England">
+        </div>
+
+        <div class="img-flex">
+            <img src="images/Jasper, AB, Canada.jpg" alt="Canada">
+        </div>
+
+        <div class="img-flex">
+            <img src="images/Qatar.jpg" alt="Qatar">
+        </div>
+
+        <div class="img-flex">
+            <img src="images/Vietnam.jpg" alt="vietnam">
+        </div>
+
+    </div>
+
+</body>
+</html>
