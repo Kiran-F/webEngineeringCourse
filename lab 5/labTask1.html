@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Validation</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      gap: 10px;
+    }
+    body input, body button{
+      font-size: 1.3rem;
+      padding: 5px 10px;
+    }
+    #message{
+      font-size: 1.4rem;
+
+    }
+  </style>
+  <script>
+    function validateInput() {
+      const input = document.getElementById("userInput").value;
+      const pattern = /^[A-Z][a-zA-Z]*$/; // Must start with capital letter and only contain letters
+
+      if (input.match(pattern)) {
+        document.getElementById("message").textContent = "Valid data ✅";
+        document.getElementById("message").style.color = "green";
+      } else {
+        alert("Invalid data! Please start with a capital letter and use only letters.");
+        document.getElementById("message").textContent = "";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Lab Task 1</h1>
+  <h2>Enter Text</h2>
+  <input type="text" id="userInput" placeholder="Enter text here">
+  <button onclick="validateInput()">Check</button>
+  <p id="message"></p>
+</body>
+</html>

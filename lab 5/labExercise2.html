@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body #container{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    body p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 10px;
+    }
+  </style>
+  <script>
+    window.onload = function createColorPicker() {
+      //Create an input element
+      const colorInput = document.createElement("input");
+      
+      //Set its attributes type, id, and value
+      colorInput.setAttribute("type", "color");
+      colorInput.setAttribute("id", "colorpicker");
+      colorInput.setAttribute("value", "#000000");
+
+      //Create a label for accessibility
+      const label = document.createElement("label");
+
+      //Set its 'for' attribute and text
+      label.setAttribute("for", "colorpicker");
+      label.textContent = "Select a color: ";
+
+      //Get the container div
+      const container = document.getElementById("container");
+
+      //Add label and input to container
+      container.appendChild(label);
+      container.appendChild(colorInput);
+
+      //Add event listener to update paragraph text
+      colorInput.addEventListener("input", function() {
+        const para = document.getElementById("color-value");
+        para.textContent = "Selected Color is: " + colorInput.value;
+        para.style.color = colorInput.value; // optional – show color visually
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="container"></div>
+  <p id="color-value">Selected Color is: #000000</p>
+</body>
+</html>
