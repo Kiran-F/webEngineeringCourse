@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quotes on Page Refresh</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    hr {
+      margin: 15px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+    em {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Quotes on Page Refresh</h1>
+  <h2>Random quotes</h2>
+  <hr>
+  <p id="quote"></p>
+  <p><em id="author"></em></p>
+
+  <script>
+    // Array of quotes and authors
+    const quotes = [
+      { text: "Every time history repeats itself the price goes up.", author: "Anonymous" },
+      { text: "The moment you think you understand a great work of art, it's dead for you.", author: "Robert Wilson" },
+      { text: "With faith, discipline and selfless devotion to duty, there is nothing worthwhile that you cannot achieve.", author: "Quaid e Azam" },
+      { text: "Every violation of truth is not only a sort of suicide in the liar, but is a stab at the health of human society.", author: "Ralph Waldo" },
+      { text: "Man is to be found in reason, God in the passions.", author: "G. C. Lichtenberg" },
+      { text: "Great innovations should not be forced on slender majorities.", author: "Thomas Jefferson" },
+      { text: "In this world nothing can be said to be certain, except death and taxes.", author: "Benjamin Franklin" },
+      { text: "We have no more right to consume happiness without producing it than to consume wealth without producing it.", author: "George Bernard" },
+      { text: "So little done, so much to do.", author: "Cecil Rhodes" },
+      { text: "Nine-tenths of wisdom consists in being wise in time.", author: "Theodore Roosevelt" }
+    ];
+
+    // Generate random index using Math.random() and Math.floor()
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+
+    // Select a random quote and author
+    let selectedQuote = quotes[randomIndex];
+
+    // Display on webpage
+    document.getElementById("quote").textContent = selectedQuote.text;
+    document.getElementById("author").textContent = "- " + selectedQuote.author;
+  </script>
+</body>
+</html>
