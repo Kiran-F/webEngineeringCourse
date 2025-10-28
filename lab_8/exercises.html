@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercises</title>
+</head>
+<style>
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    #Exc1{
+        background: red;
+        color: #fff;
+    }
+    #Exc1:focus{
+        background-color: black;
+    }
+    #Exc2{
+        background: blue;
+        color: #fff;
+    }
+    #Exc2:focus{
+        background-color: black;
+    }
+    #Exc3{
+        background: fuchsia;
+        color: #fff;
+    }
+    #Exc3:focus{
+        background-color: black;
+    }
+    #Exc4{
+        background: green;
+        color: #fff;
+    }
+    #Exc4:focus{
+        background-color: black;
+    }
+    #promiseBtn, #asyncBtn{
+        background-color: rgb(151, 103, 32);
+        color: #fff;
+    }
+</style>
+<body>
+    <button id="Exc1">Run Exercise 1</button>
+    <button id="Exc2">Run Exercise 2</button>
+    <button id="Exc3">Run Exercise 3</button>
+    <button id="Exc4">Run Exercise 4</button>
+
+    <button id="promiseBtn">Run with Promises</button>
+    <button id="asyncBtn">Run with Async/Await</button>
+
+<br><br>
+<hr>
+    <p id="oneTask"></p>
+    <p id="twoTask"></p>
+    <p id="threeTask"></p>
+    <p id="fourTask"></p>
+
+<script src="labExercises.js"></script>
+<script src="LabTask.js"></script>
+</body>
+</html>
