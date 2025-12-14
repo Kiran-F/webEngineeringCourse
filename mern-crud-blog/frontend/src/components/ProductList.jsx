@@ -10,7 +10,7 @@ const ProductList = ({ products, deleteProduct, fetchProducts }) => {
     
     useEffect(() => {
         fetchProducts();
-    }, [])
+    })
     
     return (
         <div>

@@ -10,7 +10,7 @@ const UserList = ({ users, deleteUser, fetchUsers }) => {
 
     useEffect(() => {
         fetchUsers()
-    }, [])
+    })
     
     return (
         <div className='mt-10 flex flex-col mx-auto justify-center'>
