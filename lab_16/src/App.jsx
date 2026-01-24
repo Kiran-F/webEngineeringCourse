@@ -71,7 +71,9 @@ export default function App() {
   return (
     <ThemeProvider>
       <div>
+        {/* for lab Exercise */}
         <ThemeSwitcher />
+        {/* for lab Task */}
         <AuthToggle />
       </div>
     </ThemeProvider>
