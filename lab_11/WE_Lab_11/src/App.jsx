@@ -5,8 +5,6 @@ import Home from './components/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
-
-// FIXED: File name is Product.jsx, not Products.jsx
 import Products, { BikeProducts, CarProducts } from './components/Product.jsx';
 
 function App() {

@@ -4,11 +4,6 @@ function EmployeeComponent() {
 
     const [employees, setEmployees] = useState([])
 
-    useEffect(() => {
-        getEmployees()
-    }, [])
-
-
     const getEmployees = () => {
 
         setEmployees([
@@ -32,6 +27,10 @@ function EmployeeComponent() {
             }
          ])
     };
+
+    useEffect(() => {
+        getEmployees()
+    }, [])
 
     return (
         <div className = "container">

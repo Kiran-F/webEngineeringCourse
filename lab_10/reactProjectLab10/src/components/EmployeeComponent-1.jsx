@@ -35,6 +35,11 @@ const EmployeeComponent = () => {
       valid = false;
     } else copy.age = "";
 
+     if(age > 30 || age < 18){
+        copy.age = "The age must be between 18 and 30";
+        valid = false;
+      }
+
     if (!subject.trim()) {
       copy.subject = "Please select a subject";
       valid = false;

@@ -6,16 +6,18 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render( 
   <StrictMode>  
    <p>Welcome!</p><b> We Labs </b> 
- <table> 
-    <tr> 
-      <th>Name</th> 
-    </tr> 
-    <tr> 
-      <td>Sidra</td> 
-    </tr> 
-    <tr> 
-      <td>Shafi</td> 
-    </tr> 
+  <table> 
+    <tbody>
+      <tr> 
+        <th>Name</th> 
+      </tr> 
+      <tr> 
+        <td>Sidra</td> 
+      </tr> 
+      <tr> 
+        <td>Shafi</td> 
+      </tr> 
+    </tbody>
   </table> 
   <App />  
   </StrictMode>, 

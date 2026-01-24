@@ -16,9 +16,8 @@ function Posts() {
     <h2 class="text-danger">Lab Exercise</h2>
       <h3>Fetched Posts</h3>
 
-      {posts.length === 0 ? (
-        <p>Loading...</p>
-      ) : (
+      {posts.length === 0 ? (<p>Loading...</p>) : 
+      (
         <ul style={{ textAlign: "left", padding: "20px" }}>
           {posts.map((post) => (
             <li key={post.id} style={{ marginBottom: "10px" }}>
