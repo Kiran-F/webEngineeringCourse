@@ -7,9 +7,11 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     <hr />
-    <Apps />
+    <Apps />  
   </StrictMode>,
 )
+
+// for implementing useParams
 
 import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'; 
 function Info() { 
@@ -19,14 +21,14 @@ return <h1>Hello, {firstname}!</h1>;
 function Apps() { 
 return ( 
 <BrowserRouter> 
-<nav> 
-<Link to="/customer/Emil">Emil</Link> |  
-<Link to="/customer/Tobias">Tobias</Link> | 
-<Link to="/customer/Linus">Linus</Link> 
-</nav> 
-<Routes> 
-<Route path="/customer/:firstname" element={<Info />} /> 
-</Routes> 
+  <nav> 
+    <Link to="/customer/Emil">Emil</Link> |  
+    <Link to="/customer/Tobias">Tobias</Link> | 
+    <Link to="/customer/Linus">Linus</Link> 
+  </nav> 
+  <Routes> 
+    <Route path="/customer/:firstname" element={<Info />} /> 
+  </Routes> 
 </BrowserRouter> 
 ); 
 } 
